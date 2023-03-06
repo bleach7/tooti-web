@@ -1,3 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-weight: 400;
+  font-family: "Lato";
+  font-style: normal;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato/400/lato-regular.woff2") format("woff2"),
+    url("../fonts/lato/400/lato-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Lato";
+  font-style: normal;
+  src: local("Lato Medium"), local("Lato-Medium"),
+    url("../fonts/lato/500/lato-medium.woff2") format("woff2"),
+    url("../fonts/lato/500/lato-medium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Lato";
+  font-style: normal;
+  src: local("Lato Semi Bold"), local("Lato-Semi-Bold"),
+    url("../fonts/lato/600/lato-semibold.woff2") format("woff2"),
+    url("../fonts/lato/600/lato-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Lato";
+  font-style: normal;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato/700/lato-bold.woff2") format("woff2"),
+    url("../fonts/lato/700/lato-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "San Francisco Pro";
+  font-style: normal;
+  src: local("San Francisco Pro Display Regular"),
+    local("San-Francisco-Pro-Display-Regular"),
+    url("../fonts/san-francisco-pro-display/400/san-francisco-pro-display-regular.woff2")
+      format("woff2"),
+    url("../fonts/san-francisco-pro-display/400/san-francisco-pro-display-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "San Francisco Pro";
+  font-style: normal;
+  src: local("San Francisco Pro Display Medium"),
+    local("San-Francisco-Pro-Display-Medium"),
+    url("../fonts/san-francisco-pro-display/500/san-francisco-pro-display-medium.woff2")
+      format("woff2"),
+    url("../fonts/san-francisco-pro-display/500/san-francisco-pro-display-medium.woff")
+      format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "San Francisco Text";
+  font-style: normal;
+  src: local("San Francisco Text Light"),
+    local("San-Francisco-Pro-Display-Medium"),
+    url("../fonts/san-francisco-pro-text/300/san-francisco-pro-text-light.woff2")
+      format("woff2"),
+    url("../fonts/san-francisco-pro-text/300/san-francisco-pro-text-light.woff")
+      format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "San Francisco Text Regular";
+  font-style: normal;
+  src: local("San Francisco Pro Display Medium"),
+    local("San-Francisco-Pro-Display-Medium"),
+    url("../fonts/san-francisco-pro-text/400/san-francisco-pro-text-regular.woff2")
+      format("woff2"),
+    url("../fonts/san-francisco-pro-text/400/san-francisco-pro-text-regular.woff")
+      format("woff");
+}
+
+*::selection {
+  @apply bg-black text-white;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body::-webkit-scrollbar {
+  @apply w-[7.5px];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply rounded bg-black;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-white font-lato text-[16px] font-normal leading-[21px] text-black;
+}
+
+#root {
+  @apply flex min-h-full flex-col overflow-hidden;
+}
